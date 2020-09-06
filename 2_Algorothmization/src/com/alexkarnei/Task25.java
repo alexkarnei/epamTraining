@@ -1,9 +1,8 @@
 package com.alexkarnei;
 
-import java.util.Random;
 import java.util.Scanner;
 
-public class Task24 {
+public class Task25 {
     public static void main() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the dimension n of the matrix. n - even  ");
@@ -16,16 +15,13 @@ public class Task24 {
             } else {
                 int[][] myArray = new int[n][n];
                 for (int i = 0; i < n; i++) {
-                    if (i % 2 != 0) {
-                        for (int j = 0; j < n; j++) {
-                            myArray[i][j] = n - j;
-                            System.out.print(myArray[i][j] + "\t");
+                    for (int j = n - 1; j >= 0; j--) {
+                        if (i <= j) {
+                            myArray[i][j] = i + 1;
+                        } else {
+                            myArray[i][j] = 0;
                         }
-                    } else {
-                        for (int j = 0; j < n; j++) {
-                            myArray[i][j] = j + 1;
-                            System.out.print(myArray[i][j] + "\t");
-                        }
+                        System.out.print(myArray[i][j] + "\t");
                     }
                     System.out.println();
                 }
