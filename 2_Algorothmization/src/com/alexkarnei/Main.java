@@ -73,6 +73,12 @@ public class Main {
             case 26:
                 Task26.main();
                 break;
+            case 27:
+                Task27.main();
+                break;
+            case 28:
+                Task28.main();
+                break;
 //            case 31:
 //                Task31.main();
 //                break;
