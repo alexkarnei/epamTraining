@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Choose a topic task :\n1 -Одномерные массивы;\n2 - Массивы массивов\n3 - Р¦РёРєР»С‹; ");
+        System.out.println("Choose a topic task :\n1 -Одномерные массивы;\n2 - Массивы массивов\n3 - Одномерные массивы.Сортировка; ");
         if (sc.hasNextInt()) {
             int q = sc.nextInt();
             if (q == 1 || q == 2 || q == 3) {
@@ -14,6 +14,9 @@ public class Main {
                 if (sc.hasNextInt()) {
                     int i = sc.nextInt();
                     if (i != 0) {
+                        if (i == 3) {
+                            q = 3 + 1;
+                        }
                         int number = q * 10 + i;
                         switchCase(number);
                     } else System.out.println("Stop and exist !!!");
@@ -79,24 +82,30 @@ public class Main {
             case 28:
                 Task28.main();
                 break;
-//            case 31:
-//                Task31.main();
-//                break;
-//            case 32:
-//                Task32.main();
-//                break;
-//            case 33:
-//                Task33.main();
-//                break;
-//            case 34:
-//                Task34.main();
-//                break;
-//            case 35:
-//                Task35.main();
-//                break;
-//            case 36:
-//                Task36.main();
-//                break;
+            case 29:
+                Task29.main();
+                break;
+            case 30:
+                Task30.main();
+                break;
+            case 31:
+                Task31.main();
+                break;
+            case 32:
+                Task32.main();
+                break;
+            case 33:
+                Task33.main();
+                break;
+            case 34:
+                Task34.main();
+                break;
+            case 35:
+                Task35.main();
+                break;
+            case 36:
+                Task36.main();
+                break;
 //            case 37:
 //                Task37.main();
 //                break;
