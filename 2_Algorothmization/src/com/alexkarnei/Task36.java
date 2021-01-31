@@ -18,7 +18,7 @@ public class Task36 {
                     int number = random.nextInt((n * n) + 1);
                 }
             }
-            Task35.printMatrix(magicSqr);
+            Task33.printMatrix(magicSqr);
         }
     }
 }

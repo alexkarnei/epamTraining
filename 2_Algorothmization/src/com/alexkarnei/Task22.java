@@ -14,13 +14,7 @@ public class Task22 {
         } else {
             int n = sc.nextInt();
             int[][] myArray = new int[n][n];
-            for (int i = 0; i < myArray.length; i++) {
-                for (int j = 0; j < myArray[i].length; j++) {
-                    myArray[i][j] = random.nextInt(10);
-                    System.out.print(myArray[i][j] + "\t");
-                }
-                System.out.println();
-            }
+            createArray(random, myArray);
             System.out.print("Elements standing diagonally : ");
             for (int i = 0; i < myArray.length; i++) {
                 for (int j = 0; j < myArray[i].length; j++) {
@@ -29,6 +23,16 @@ public class Task22 {
                     }
                 }
             }
+        }
+    }
+
+    private static void createArray(Random random, int[][] myArray) {
+        for (int i = 0; i < myArray.length; i++) {
+            for (int j = 0; j < myArray[i].length; j++) {
+                myArray[i][j] = random.nextInt(10);
+                System.out.print(myArray[i][j] + "\t");
+            }
+            System.out.println();
         }
     }
 }

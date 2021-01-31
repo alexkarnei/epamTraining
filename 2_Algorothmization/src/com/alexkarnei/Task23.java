@@ -18,24 +18,12 @@ public class Task23 {
             } else {
                 int m = sc.nextInt();
                 int[][] myArray = new int[n][m];
-                for (int i = 0; i < n; i++) {
-                    for (int j = 0; j < m; j++) {
-                        myArray[i][j] = random.nextInt(10);
-                        System.out.print(myArray[i][j] + "\t");
-                    }
-                    System.out.println();
-                }
+                Task21.randomCreateArray(random, n, m, myArray);
                 System.out.println(" Insert k ");
                 if (!sc.hasNextInt()) {
                     System.out.println("Insert wrong data");
                 } else {
-                    int k = sc.nextInt();
-                    for (int i = 0; i < n; i++) {
-                        for (int j = 0; j < m; j++) {
-                            if (i == (k - 1))
-                                System.out.print(myArray[i][j] + "\t");
-                        }
-                    }
+                    extracted(sc, n, m, myArray);
                     System.out.println();
                 }
                 System.out.println("Insert p ");
@@ -53,4 +41,16 @@ public class Task23 {
             }
         }
     }
+
+    private static void extracted(Scanner sc, int n, int m, int[][] myArray) {
+        int k = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (i == (k - 1))
+                    System.out.print(myArray[i][j] + "\t");
+            }
+        }
+    }
+
+
 }

@@ -19,7 +19,7 @@ public class Task35 {
                     myArray[i][j] = random.nextInt(15);
                 }
             }
-            printMatrix(myArray);
+            Task33.printMatrix(myArray);
             maxElem = myArray[0][0];
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
@@ -38,17 +38,17 @@ public class Task35 {
                 }
             }
             System.out.println(" Result matrix: ");
-            printMatrix(myArray);
+            Task33.printMatrix(myArray);
         }
     }
 
 
-    public static void printMatrix(int[][] myArray) {
+  /*  public static void printMatrix(int[][] myArray) {
         for (int i = 0; i < myArray.length; i++) {
             for (int j = 0; j < myArray[i].length; j++) {
                 System.out.print(myArray[i][j] + "\t");
             }
             System.out.println();
         }
-    }
+    }*/
 }

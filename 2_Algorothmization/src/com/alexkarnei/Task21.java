@@ -19,13 +19,7 @@ public class Task21 {
             } else {
                 int m = sc.nextInt();
                 int[][] myArray = new int[n][m];
-                for (int i = 0; i < n; i++) {
-                    for (int j = 0; j < m; j++) {
-                        myArray[i][j] = random.nextInt(10);
-                        System.out.print(myArray[i][j] + "\t");
-                    }
-                    System.out.println();
-                }
+                randomCreateArray(random, n, m, myArray);
                 System.out.println("Result ");
                 for (int[] temp : myArray) {
                     for (int j = 0; j < temp.length; j += 2) {
@@ -36,6 +30,16 @@ public class Task21 {
                     System.out.println();
                 }
             }
+        }
+    }
+
+   public static void randomCreateArray(Random random, int n, int m, int[][] myArray) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                myArray[i][j] = random.nextInt(10);
+                System.out.print(myArray[i][j] + "\t");
+            }
+            System.out.println();
         }
     }
 }
