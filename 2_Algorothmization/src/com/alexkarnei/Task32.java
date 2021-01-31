@@ -49,7 +49,7 @@ public class Task32 {
         }
     }
 
-    private static void printMatrix(int[][] myArray) {
+    public static void printMatrix(int[][] myArray) {
         for (int i = 0; i < myArray.length; i++) {
             for (int j = 0; j < myArray[i].length; j++) {
                 System.out.print(myArray[i][j] + "\t");

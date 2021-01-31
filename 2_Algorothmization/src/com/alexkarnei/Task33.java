@@ -18,16 +18,33 @@ public class Task33 {
                     myArray[i][j] = random.nextInt(10);
                 }
             }
-            printMatrix(myArray);
-        }
-    }
-
-    public static void printMatrix(int[][] myArray) {
-        for (int i = 0; i < myArray.length; i++) {
-            for (int j = 0; j < myArray[i].length; j++) {
-                System.out.print(myArray[i][j] + "\t");
+            Task32.printMatrix(myArray);
+            for (int k = myArray.length - 1; k > 0; k--) {
+                for (int i = 0; i < k; i++) {
+                    for (int j = 0; j < myArray[i].length; j++) {
+                        if (myArray[i][j] > myArray[i + 1][j]) {
+                            int temp = myArray[i][j];
+                            myArray[i][j] = myArray[i + 1][j];
+                            myArray[i + 1][j] = temp;
+                        }
+                    }
+                }
             }
-            System.out.println();
+            System.out.println("Sort Ascending");
+            Task32.printMatrix(myArray);
+            for (int k = myArray.length - 1; k > 0; k--) {
+                for (int i = 0; i < k; i++) {
+                    for (int j = 0; j < myArray[i].length; j++) {
+                        if (myArray[i][j] < myArray[i + 1][j]) {
+                            int temp = myArray[i][j];
+                            myArray[i][j] = myArray[i + 1][j];
+                            myArray[i + 1][j] = temp;
+                        }
+                    }
+                }
+            }
+            System.out.println("Sort descending");
+            Task32.printMatrix(myArray);
         }
     }
 }
