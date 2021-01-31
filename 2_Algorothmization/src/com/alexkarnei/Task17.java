@@ -26,15 +26,7 @@ public class Task17 {
                     newMyArray[t] = myArray[t] + myArray[(myArray.length - 1) - t];
                 }
                 System.out.println(Arrays.toString(newMyArray));
-                for (int j = newMyArray.length - 1; j > 0; j--) {
-                    for (int k = 0; k < j; k++) {
-                        if (newMyArray[k] > newMyArray[k + 1]) {
-                            int tmp = newMyArray[k];
-                            newMyArray[k] = newMyArray[k + 1];
-                            newMyArray[k + 1] = tmp;
-                        }
-                    }
-                }
+                Task14.sortedArray(newMyArray);
                 System.out.print("Maximun = " + newMyArray[newMyArray.length - 1]);
             }
         }

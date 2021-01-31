@@ -21,17 +21,21 @@ public class Task14 {
             }
             System.out.println(Arrays.toString(myArray));
 
-            for (int j = myArray.length - 1; j > 0; j--) {
-                for (int k = 0; k < j; k++) {
-                    if (myArray[k] > myArray[k + 1]) {
-                        int tmp = myArray[k];
-                        myArray[k] = myArray[k + 1];
-                        myArray[k + 1] = tmp;
-                    }
-                }
-            }
+            sortedArray(myArray);
             System.out.println("Minimum element = " + myArray[0] + "\n" +
                     "Maximum element = " + myArray[myArray.length - 1]);
+        }
+    }
+
+    static void sortedArray(int[] myArray) {
+        for (int j = myArray.length - 1; j > 0; j--) {
+            for (int k = 0; k < j; k++) {
+                if (myArray[k] > myArray[k + 1]) {
+                    int tmp = myArray[k];
+                    myArray[k] = myArray[k + 1];
+                    myArray[k + 1] = tmp;
+                }
+            }
         }
     }
 }

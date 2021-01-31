@@ -57,7 +57,7 @@ public class Task19 {
                     }
                 }
                 if (counterMax == 1) {
-                    System.out.println("Number " + myArray[c] +"meets " + max + " times");
+                    System.out.println("Number " + myArray[c] +" meets " + max + " times");
                 } else {
                     for (int i = 0; i < myArrayB.length; i++) {
                         if (myArrayB[i] == max) {

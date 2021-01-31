@@ -25,13 +25,18 @@ public class Task18 {
             for (int temp : myArray)
                 if (temp == min) counter++;
 
-            int[] newArray = new int[myArray.length - counter];
-            int indexNewArray = 0;
-            for (int temp : myArray)
-                if (temp != min) {
-                    newArray[indexNewArray++] = temp;
-                }
-            System.out.println("New Array "+Arrays.toString(newArray));
+            int[] newArray = getNewArray(myArray, min, counter);
+            System.out.println("New Array " + Arrays.toString(newArray));
         }
+    }
+
+    private static int[] getNewArray(int[] myArray, int min, int counter) {
+        int[] newArray = new int[myArray.length - counter];
+        int indexNewArray = 0;
+        for (int temp : myArray)
+            if (temp != min) {
+                newArray[indexNewArray++] = temp;
+            }
+        return newArray;
     }
 }
