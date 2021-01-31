@@ -1,7 +1,6 @@
 package com.alexkarnei;
 
 import java.util.Arrays;
-import java.util.Random;
 import java.util.Scanner;
 
 public class Task13 {
@@ -33,9 +32,9 @@ public class Task13 {
                     sumPositive++;
                 }
             }
-            System.out.println("Sum of zero members = " + sumZero + "\n" +
-                    "Sum of positive members = " + sumPositive + "\n" +
-                    "Sum of negative members = " + sumNegative);
+            System.out.println("Quantity of zero members = " + sumZero + "\n" +
+                    "Quantity of positive members = " + sumPositive + "\n" +
+                    "Quantity of negative members = " + sumNegative);
         }
     }
 }

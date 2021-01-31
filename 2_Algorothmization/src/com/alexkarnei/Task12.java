@@ -1,12 +1,12 @@
 package com.alexkarnei;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Task12 {
     public static void main() {
+        int count = 0;
         Random random = new Random();
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the dimension of the array ");
@@ -27,9 +27,11 @@ public class Task12 {
             for (int j = 0; j < myArray.length; j++) {
                 if (myArray[j] > z) {
                     myArray[j] = z;
+                    count++;
                 }
             }
             System.out.println(Arrays.toString(myArray));
+            System.out.printf("Number of replacements %s", count);
         }
     }
 }

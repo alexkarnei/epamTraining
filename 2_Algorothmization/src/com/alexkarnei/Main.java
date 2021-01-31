@@ -14,8 +14,8 @@ public class Main {
                 if (sc.hasNextInt()) {
                     int i = sc.nextInt();
                     if (i != 0) {
-                        if (i == 3) {
-                            q = 3 + 1;
+                        if (q == 3) {
+                            i= i+6;
                         }
                         int number = q * 10 + i;
                         switchCase(number);
@@ -106,9 +106,9 @@ public class Main {
             case 36:
                 Task36.main();
                 break;
-//            case 37:
-//                Task37.main();
-//                break;
+            case 37:
+                Task37.main();
+                break;
 //            case 38:
 //                Task38.main();
 //                break;
