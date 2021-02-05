@@ -115,6 +115,9 @@ public class Main {
             case 39:
                 Task39.main();
                 break;
+            case 40:
+                Task40.main();
+                break;
             default:
                 System.out.println("Wrong task number!!!");
                 break;
