@@ -19,16 +19,19 @@ public class Task39 {
             for (int i = 0; i < n; i++) {
                 myArray[i] = random.nextInt(100);
             }
-            System.out.printf("Array : %s", Arrays.toString(myArray)+"\n");
-
-            for (int i = 0; i < myArray.length; i++) {
+            System.out.printf("Array : %s", Arrays.toString(myArray) + "\n");
+            for (int i = 0; i < myArray.length - 1; i++) {
+                int maxElem = myArray[i];
+                int maxElementIndex = i;
                 for (int j = i + 1; j < myArray.length; j++) {
-                    int maxElem = myArray[i];
-                    if (myArray[j] > maxElem) {
-                        myArray[i] = myArray[j];
-                        myArray[j] = maxElem;
+                    if (myArray[j] > myArray[maxElementIndex]) {
+                        maxElementIndex = j;
                     }
                 }
+                maxElem = myArray[maxElementIndex];
+                myArray[maxElementIndex] = myArray[i];
+                myArray[i] = maxElem;
+
             }
             System.out.printf("Result array : %s", Arrays.toString(myArray));
         }
