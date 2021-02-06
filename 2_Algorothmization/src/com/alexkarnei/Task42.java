@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Task40 {
+public class Task42 {
     public static void main() {
         Random random = new Random();
         Scanner sc = new Scanner(System.in);
@@ -20,18 +20,19 @@ public class Task40 {
                 myArray[i] = random.nextInt(100);
             }
             System.out.printf("Array : %s", Arrays.toString(myArray) + "\n");
-            boolean sorted= false;
+            int length = myArray.length / 2;
             int temp;
-            while (!sorted) {
-                sorted = true;
-                for (int i = 0; i < myArray.length - 1; i++) {
-                    if (myArray[i] > myArray[i + 1]) {
-                        temp = myArray[i];
-                        myArray[i] = myArray[i + 1];
-                        myArray[i + 1] = temp;
-                        sorted=false;
+            while (length >= 1) {
+                for (int i = 0; i < myArray.length; i++) {
+                    for (int j = i - length; j >= 0; j -= length) {
+                        if (myArray[j] > myArray[j + length]) {
+                            temp = myArray[j + length];
+                            myArray[j + length] = myArray[j];
+                            myArray[j] = temp;
+                        }
                     }
                 }
+                length = length / 2;
             }
             System.out.printf("Result array : %s", Arrays.toString(myArray));
         }
