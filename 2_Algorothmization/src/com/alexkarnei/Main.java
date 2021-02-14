@@ -6,16 +6,22 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Choose a topic task :\n1 -Одномерные массивы;\n2 - Массивы массивов\n3 - Одномерные массивы.Сортировка; ");
+        System.out.println("Choose a topic task :\n1 -Одномерные массивы;" +
+                                                "\n2 - Массивы массивов;" +
+                                                "\n3 - Одномерные массивы.Сортировка;" +
+                                                "\n4 - Декомпозиция с использованием методов (подпрограммы);");
         if (sc.hasNextInt()) {
             int q = sc.nextInt();
-            if (q == 1 || q == 2 || q == 3) {
+            if (q == 1 || q == 2 || q == 3 || q == 4) {
                 System.out.println("Insert task number. For exit insert 0 ");
                 if (sc.hasNextInt()) {
                     int i = sc.nextInt();
                     if (i != 0) {
                         if (q == 3) {
-                            i= i+6;
+                            i = i + 6;
+                        }
+                        if (q == 4) {
+                            i = i + 4;
                         }
                         int number = q * 10 + i;
                         switchCase(number);
@@ -123,6 +129,21 @@ public class Main {
                 break;
             case 42:
                 Task42.main();
+                break;
+            case 43:
+                Task43.main();
+                break;
+            case 44:
+                Task44.main();
+                break;
+            case 45:
+                Task45.main();
+                break;
+            case 46:
+                Task46.main();
+                break;
+            case 47:
+                Task47.main();
                 break;
             default:
                 System.out.println("Wrong task number!!!");
