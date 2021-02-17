@@ -9,14 +9,14 @@ public class Task45 {
 
         System.out.print("Insert A = ");
         int A = getNumber(sc);
-        if (!checkNumber(A)) {
+        if (checkNumber(A)) {
             System.out.println("Insert wrong data");
             return;
         }
 
         System.out.print("Insert  B = ");
         int B = getNumber(sc);
-        if (!checkNumber(B)) {
+        if (checkNumber(B)) {
             System.out.println("Insert wrong data");
             return;
         }
@@ -44,14 +44,13 @@ public class Task45 {
     }
 
     public static boolean checkNumber(int number) {
-        return number != -1;
+        return number == -1;
     }
 
     private static int nok(int A, int B, int result) {
 
         if (A != 0 && B != 0 && result != 0) {
-            int resultNok = (A * B) / result;
-            return resultNok;
+            return (A * B) / result;
         } else return 0;
     }
 

@@ -14,10 +14,9 @@ public class Task47 {
     }
 
     private static Double squareHexagon(int a) {
-        double squareHexagon;
         double radius;
         radius = a * (Math.sqrt(3) / 2);
-        return squareHexagon = 3 * a * radius;
+        return 3 * a * radius;
     }
 
     private static int getSideLength() {

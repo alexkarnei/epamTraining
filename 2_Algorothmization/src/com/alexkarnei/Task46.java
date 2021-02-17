@@ -11,28 +11,28 @@ public class Task46 {
 
         System.out.print("Insert A = ");
         int A = Task45.getNumber(sc);
-        if(!Task45.checkNumber(A)){
+        if(Task45.checkNumber(A)){
             System.out.println("Insert wrong data!");
             return;
         }
 
         System.out.print("Insert B = ");
         int B = Task45.getNumber(sc);
-        if(!Task45.checkNumber(B)){
+        if(Task45.checkNumber(B)){
             System.out.println("Insert wrong data!");
             return;
         }
 
         System.out.print("Insert C = ");
         int C = Task45.getNumber(sc);
-        if(!Task45.checkNumber(C)){
+        if(Task45.checkNumber(C)){
             System.out.println("Insert wrong data!");
             return;
         }
 
         System.out.print("Insert D = ");
         int D = Task45.getNumber(sc);
-        if(!Task45.checkNumber(D)){
+        if(Task45.checkNumber(D)){
             System.out.println("Insert wrong data!");
             return;
         }
