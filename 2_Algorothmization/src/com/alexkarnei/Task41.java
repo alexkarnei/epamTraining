@@ -20,9 +20,9 @@ public class Task41 {
                 myArray[i] = random.nextInt(100);
             }
             System.out.printf("Array : %s", Arrays.toString(myArray) + "\n");
-            for (int start = 0; start < myArray.length; start++) {
-                int value = myArray[start];
-                int i = start - 1;
+            for (int j = 0; j < myArray.length; j++) {
+                int value = myArray[j];
+                int i = j - 1;
                 i = getAnInt(myArray, value, i);
                 myArray[i + 1] = value;
             }

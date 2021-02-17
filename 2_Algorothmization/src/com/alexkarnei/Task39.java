@@ -21,7 +21,7 @@ public class Task39 {
             }
             System.out.printf("Array : %s", Arrays.toString(myArray) + "\n");
             for (int i = 0; i < myArray.length - 1; i++) {
-                int maxElem = myArray[i];
+                int maxElem;
                 int maxElementIndex = i;
                 for (int j = i + 1; j < myArray.length; j++) {
                     if (myArray[j] > myArray[maxElementIndex]) {
