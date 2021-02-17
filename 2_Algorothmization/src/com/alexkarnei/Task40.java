@@ -22,6 +22,7 @@ public class Task40 {
             System.out.printf("Array : %s", Arrays.toString(myArray) + "\n");
             boolean sorted= false;
             int temp;
+            int counter=0;
             while (!sorted) {
                 sorted = true;
                 for (int i = 0; i < myArray.length - 1; i++) {
@@ -30,10 +31,12 @@ public class Task40 {
                         myArray[i] = myArray[i + 1];
                         myArray[i + 1] = temp;
                         sorted=false;
+                        counter++;
                     }
                 }
             }
             System.out.printf("Result array : %s", Arrays.toString(myArray));
+            System.out.printf("\nNumber of permutations = %s", counter);
         }
     }
 }

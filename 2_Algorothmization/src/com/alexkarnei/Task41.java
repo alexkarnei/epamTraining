@@ -27,7 +27,6 @@ public class Task41 {
                 myArray[i + 1] = value;
             }
             System.out.printf("Result array : %s", Arrays.toString(myArray));
-
         }
     }
 
