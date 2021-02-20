@@ -15,12 +15,7 @@ public class Task37 {
             int n = sc.nextInt();
             int[] myArray = new int[n];
             System.out.print("First array: ");
-            for (int i = 0; i < n; i++) {
-                myArray[i] = random.nextInt(100);
-                if (i < n) {
-                    System.out.print(myArray[i] + " ");
-                }
-            }
+            arrayInput(random, n, myArray);
             System.out.println();
             System.out.println("Enter the dimension of the second array ");
             if (!sc.hasNextInt()) {
@@ -29,12 +24,7 @@ public class Task37 {
                 int m = sc.nextInt();
                 int[] mySecondArray = new int[m];
                 System.out.print("Second array: ");
-                for (int i = 0; i < m; i++) {
-                    mySecondArray[i] = random.nextInt(100);
-                    if (i < m) {
-                        System.out.print(mySecondArray[i] + " ");
-                    }
-                }
+                arrayInput(random, m, mySecondArray);
                 System.out.println();
                 System.out.print("Enter number k =  ");
                 if (!sc.hasNextInt()) {
@@ -52,6 +42,13 @@ public class Task37 {
                     }
                 }
             }
+        }
+    }
+
+    public static void arrayInput(Random random, int n, int[] myArray) {
+        for (int i = 0; i < n; i++) {
+            myArray[i] = random.nextInt(100);
+            System.out.print(myArray[i] + " ");
         }
     }
 }
