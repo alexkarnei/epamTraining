@@ -2,7 +2,6 @@ import javax.swing.*;
 
 public class MainGameWindow extends JFrame {
 
-
     public MainGameWindow() {
         setTitle("Змейка");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

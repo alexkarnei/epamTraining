@@ -111,7 +111,7 @@ public class Game extends JPanel implements ActionListener {
             String str = new String("Game over!");
             g.setColor(Color.white);
             setBackground(Color.RED);
-            g.drawString(str, 200, SIZE / 2);
+            g.drawString(str, 200, SIZE / 2);;
         }
     }
 
