@@ -23,13 +23,13 @@ public class Task50 {
                 } else {
                     int thirdNumber = sc.nextInt();
                     System.out.println("Third number = " + thirdNumber);
-                    compireNumber(firstNumber, secondNumber, thirdNumber);
+                    comprimeNumber(firstNumber, secondNumber, thirdNumber);
                 }
             }
         }
     }
 
-    private static void compireNumber(int firstNumber, int secondNumber, int thirdNumber) {
+    private static void comprimeNumber(int firstNumber, int secondNumber, int thirdNumber) {
         int nodFirstNumberSecondNumber = Task45.nod(firstNumber, secondNumber, 0);
         System.out.printf(" NOD (%s,%s) = %s \n", firstNumber, secondNumber, nodFirstNumberSecondNumber);
         if (nodFirstNumberSecondNumber != 1) {

@@ -131,7 +131,7 @@ public class Main {
                 Task42.main();
                 break;
             case 43:
-                Task43.main();
+                Task44.Task43.main();
                 break;
             case 44:
                 Task44.main();
