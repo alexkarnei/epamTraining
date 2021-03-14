@@ -131,7 +131,7 @@ public class Main {
                 Task42.main();
                 break;
             case 43:
-                Task44.Task43.main();
+                Task43.main();
                 break;
             case 44:
                 Task44.main();
@@ -156,6 +156,9 @@ public class Main {
                 break;
             case 51:
                 Task51.main();
+                break;
+            case 52:
+                Task52.main();
                 break;
             default:
                 System.out.println("Wrong task number!!!");
