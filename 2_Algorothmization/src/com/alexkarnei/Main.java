@@ -6,10 +6,10 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Choose a topic task :\n1 -Одномерные массивы;" +
+        System.out.println("Choose a topic task :\n1 - Одномерные массивы;" +
                                                 "\n2 - Массивы массивов;" +
-                                                "\n3 - Одномерные массивы.Сортировка;" +
-                                                "\n4 - Декомпозиция с использованием методов (подпрограммы);");
+                                                "\n3 - Одномерные массивы. Сортировки;" +
+                                                "\n4 - Декомпозиция с использованием методов (подпрограммы)");
         if (sc.hasNextInt()) {
             int q = sc.nextInt();
             if (q == 1 || q == 2 || q == 3 || q == 4) {
@@ -150,6 +150,9 @@ public class Main {
                 break;
             case 49:
                 Task49.main();
+                break;
+            case 50:
+                Task50.main();
                 break;
             default:
                 System.out.println("Wrong task number!!!");
