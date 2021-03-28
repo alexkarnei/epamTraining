@@ -3,6 +3,12 @@ package com.alexkarnei;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * На плоскости заданы своими координатами n точек.
+ * Написать метод (методы), определяющие, между какими из пар
+ * точек самое большое расстояние. Указание координаты точек занести в массив.
+ */
+
 public class Task48 {
     public static void main() {
         Scanner sc = new Scanner(System.in);

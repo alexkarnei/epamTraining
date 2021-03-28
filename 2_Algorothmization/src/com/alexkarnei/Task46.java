@@ -2,6 +2,10 @@ package com.alexkarnei;
 
 import java.util.Scanner;
 
+/**
+ * Написать методы для нахлждения наибольшего общего делителя четырех натуральных чисел.
+ */
+
 public class Task46 {
     public static void main() {
         int r1 = 0;

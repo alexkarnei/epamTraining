@@ -2,6 +2,11 @@ package com.alexkarnei;
 
 import java.util.Scanner;
 
+/**
+ * Вычислить площадь правильного шестиугольника
+ * со стороной а, используя метод вычисления площади треугольника.
+ */
+
 public class Task47 {
     public static void main() {
 

@@ -4,6 +4,12 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Составить программу которая в массиве А[N] находит второе по величине число
+ * (вывести на печать число, которое меньше максимального элемента массива
+ * но больше всех других элементов).
+ */
+
 public class Task49 {
     public static void main() {
         Random random = new Random();

@@ -2,6 +2,12 @@ package com.alexkarnei;
 
 import java.util.Scanner;
 
+/**
+ * Написать метод (методы) нахождения наибольшуго общего делителя и
+ * наименьшег общего кратного двух натуральных чисел.
+ * НОК (А,В) = А*В/ НОД (А,В);
+ */
+
 public class Task45 {
     public static void main() {
         int r1 = 0;

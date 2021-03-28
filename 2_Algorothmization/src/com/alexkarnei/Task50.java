@@ -2,6 +2,11 @@ package com.alexkarnei;
 
 import java.util.Scanner;
 
+/**
+ * Написать метод(методы),проверяющий, являются ли
+ * данные три числа взаимно простыми
+ */
+
 public class Task50 {
     public static void main() {
         Scanner sc = new Scanner(System.in);
